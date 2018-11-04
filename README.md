@@ -6,15 +6,15 @@ this is simple todo desktop application written in javascript and uses the elctr
 
 <hr>
 
-<h1>How To Run Todo Application</h1>
-<h3>1.clone this repo</h3>
+<h1>How To Run Todo Application ?</h1>
+<h3>1.clone this repo.</h3>
 
-<h3>2.extract zip file</h3>
+<h3>2.extract zip file.</h3>
 
-<h3>3.go repo directory by 'cd Electron-apps'</h3>
+<h3>3.go repo directory by 'cd Electron-apps'.</h3>
 
-<h3>4.then run command 'npm install'</h3>
-<h3>5.lastly, run this command 'npm run electron'</h3>
+<h3>4.then run command 'npm install'.</h3>
+<h3>5.lastly, run this command 'npm run electron' .</h3>
 
 
 
