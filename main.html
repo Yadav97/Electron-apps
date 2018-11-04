@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TODO</title>
+</head>
+<body bgcolor="rgba(246, 36, 89, 1)">
+
+<h1 style="text-align:center;color:rgba(38, 166, 91, 1);">My TODOs</h1>
+<ul></ul>
+<script>
+//now we recieve the msg from electron appeared
+const electron = require('electron');
+const {ipcRenderer} = electron;
+
+
+//here arg 'data' mein 'data' arg ki value aayegi jo ki index.js se aayega
+ipcRenderer.on('add:todo',(event,todo)=>{
+//here we creat the html element <li>
+//then ctreat the text by createTextNode
+//and then append the text to <li> like <li>text</li>
+//and then this li we attache from ul by taking from html
+
+  const li  = document.createElement('li');
+const text = document.createTextNode(todo);
+li.appendChild(text);
+
+document.querySelector('ul').appendChild(li);
+
+
+});
+
+
+
+ipcRenderer.on('clear:todo',(event)=>{
+
+document.querySelector('ul').innerHTML = ' ';
+
+})
+
+
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "electron":"electron ."
+  },
+  "author": "krishna",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^3.0.4"
+  }
+}

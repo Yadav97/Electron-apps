@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TODO</title>
+</head>
+<body>
+  <form>
+     <div>
+<label style="text-align:center;">enter the todo</label>
+<textarea autofocus rows="10" cols="30"></textarea>
+</div>
+<button style = "text-align:center;" type="submit" >Add</button>
+</form>
+<script>
+const electron = require('electron');
+const {ipcRenderer} = electron;
+
+//1.jaise hi user 'add ' par click karega so submit event is occured and then function is execute
+document.querySelector('form').addEventListener('submit',(event)=>{
+//event.preventDefault();
+// used to prevent Default action
+//debugger;
+//to check the value go to developeer tool and take the value
+
+const {value} = document.querySelector('textarea');
+//jo bhi pehli value aayegi woh const 'value' var store kar lega
+
+//now send it to mainwindow
+ipcRenderer.send('todo is add',value);
+//this value is store the text of todo and send it to mainwindow so they store in 'todo' variable in main mainwindow
+//recieveing function (see)
+
+                  });
+
+
+
+
+
+
+
+</script>
+
+
+
+</body>
+</html>
